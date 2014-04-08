@@ -1,8 +1,8 @@
 <?php
 /**
- * _s Theme Customizer
+ * felejo Theme Customizer
  *
- * @package _s
+ * @package felejo
  */
 
 /**

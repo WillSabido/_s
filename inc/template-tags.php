@@ -4,7 +4,7 @@
  *
  * Eventually, some of the functionality here could be replaced by core features.
  *
- * @package _s
+ * @package felejo
  */
 
 if ( ! function_exists( 'felejo_paging_nav' ) ) :

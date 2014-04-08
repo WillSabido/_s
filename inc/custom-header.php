@@ -12,7 +12,7 @@
 	<?php endif; // End header image check. ?>
 
  *
- * @package _s
+ * @package felejo
  */
 
 /**
@@ -22,7 +22,7 @@
  * @uses felejo_admin_header_style()
  * @uses felejo_admin_header_image()
  *
- * @package _s
+ * @package felejo
  */
 function felejo_custom_header_setup() {
 	add_theme_support( 'custom-header', apply_filters( 'felejo_custom_header_args', array(
