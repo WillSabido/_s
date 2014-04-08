@@ -339,11 +339,59 @@ textarea {
 /*--------------------------------------------------------------
 5.0 Navigation
 --------------------------------------------------------------*/
+.main-navigation, .main-navigation ul, .main-navigation ul ul, .main-navigation ul li {
+	background: #428bca;
+}
+.main-navigation {
+	box-shadow: 0px 5px 3px #888888;
+}
+.main-navigation.affix {
+	position: fixed;
+	top: 0px;
+}
+.main-navigation a {
+	padding: 10px;
+	color: White;
+}
+.main-navigation a:active {
+	color: DarkRed;
+}
+.main-navigation a:visited {
+	color: White;
+}
+.main-navigation a:hover {
+	text-decoration: none;
+	color: White;
+	background: #357ebd;
+}
+.main-navigation ul ul {
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 10px;
+	-webkit-border-bottom-right-radius: 20px;
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-topright: 10px;
+	-moz-border-radius-bottomright: 20px;
+	-moz-border-radius-bottomleft: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 5px;
+}
+
+/*--------------------------------------------------------------
+5.0.1 Bootstrap Navbar
+--------------------------------------------------------------*/
+.navbar {
+	min-height: 42px;
+	border: none;
+	border-radius: none;
+}
 /*--------------------------------------------------------------
 5.1 Links
 --------------------------------------------------------------*/
 a {
-	color: royalblue;
+	color: #379a9a;
 }
 a:visited {
 	color: purple;
@@ -522,6 +570,8 @@ a:active {
 9.0 Widgets
 --------------------------------------------------------------*/
 .widget {
+	background-color: #379a9a;
+	color: White;
 	margin: 0 0 1.5em;
 }
 
