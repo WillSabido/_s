@@ -79,9 +79,9 @@ add_action( 'widgets_init', 'felejo_widgets_init' );
  * Enqueue scripts and styles.
  */
 function felejo_scripts() {
-	wp_enqueue_style( 'felejo-style', get_stylesheet_uri() );
+//	wp_enqueue_style( 'felejo-style', get_stylesheet_uri() );
 
-	wp_enqueue_script( 'felejo-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
+//	wp_enqueue_script( 'felejo-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 
 	wp_enqueue_script( 'felejo-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
 
@@ -130,8 +130,8 @@ if (!is_admin()) {
 //		wp_register_style('bootswatch-styles', '//netdna.bootstrapcdn.com/bootswatch/3.1.0/amelia/bootstrap.min.css', array(), null, 'all');
 //		wp_enqueue_style('bootswatch-styles');
 		// Theme Styles
-//		wp_register_style('theme-styles', get_stylesheet_uri(), array(), null, 'all');
-//		wp_enqueue_style('theme-styles');
+		wp_register_style('theme-styles', get_stylesheet_uri(), array(), null, 'all');
+		wp_enqueue_style('theme-styles');
 		// Font Awesome
 		wp_register_style('font-awesome', '//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css', array(), null, 'all');
 		wp_enqueue_style('font-awesome');
