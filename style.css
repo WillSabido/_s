@@ -637,10 +637,15 @@ body.home .entry-content {
 	border-top-right-radius: 60px;
 	border-bottom-right-radius: 60px;
 	border-bottom-left-radius: 60px;
+	box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.3);
 }
-div#content {
-	padding-left: 10px;
-	padding-right: 10px;
+div#primary {
+	padding-left: 20%;
+	padding-right: 20%;
+}
+div#secondary {
+	padding-left: 5%;
+	padding-right: 5%;
 }
 aside.widget ul {
 	list-style: none;
@@ -649,6 +654,10 @@ aside.widget a {
 	text-decoration: none;
 	color: Yellow;
 	border-bottom: 1px Grey;
+}
+aside.widget a:hover {
+	color: White;
+	border-bottom: 1px White;
 }
 div.widget-area {
 	background: #fefefe;
