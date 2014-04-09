@@ -624,7 +624,7 @@ body.home .entry-content {
 	text-align: center;
 	background: LightGrey;
 	color: Black;
-	margin: 5px 10px 5px 10px;
+	padding: 5px 10px 5px 10px;
 	-webkit-border-top-left-radius: 60px;
 	-webkit-border-top-right-radius: 60px;
 	-webkit-border-bottom-right-radius: 60px;
@@ -639,8 +639,19 @@ body.home .entry-content {
 	border-bottom-left-radius: 60px;
 }
 div#content {
-	margin-left: 10px;
-	margin-right: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+aside.widget ul {
+	list-style: none;
+}
+aside.widget a {
+	text-decoration: none;
+	color: Yellow;
+	border-bottom: 1px Grey;
+}
+div.widget-area {
+	background: #fefefe;
 }
 /*--------------------------------------------------------------
 10.1 Posts and pages
