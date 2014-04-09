@@ -47,6 +47,9 @@ require get_template_directory() . '/slider.php';
 			<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'felejo' ); ?></a>
 
 			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+			<aside id="search" class="pull-right widget_search">
+				<?php get_search_form(); ?>
+			</aside>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 
