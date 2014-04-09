@@ -602,7 +602,7 @@ a:active {
 9.0 Widgets
 --------------------------------------------------------------*/
 .widget {
-	background-color: #379a9a;
+	background-color: #70807c;
 	color: White;
 	margin: 0 0 1.5em;
 }
@@ -616,7 +616,40 @@ a:active {
 .widget_search .search-submit {
 	display: none;
 }
-
+/*--------------------------------------------------------------
+9.1 Widgets - Edit
+--------------------------------------------------------------*/
+div#secondary widget-area {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+aside.widget ul {
+	list-style: none;
+}
+aside.widget a {
+	text-decoration: none;
+	color: Yellow;
+}
+#secondary li {
+	border-bottom: 1px Grey;
+}
+aside.widget a:hover {
+	color: White;
+	border-bottom: 1px White;
+}
+div.widget-area {
+	background: #fefefe;
+}
+aside.widget {
+	float: left;
+}
+div#widget-wrapper {
+	margin: 0 auto;
+	max-width: 1200px;
+	padding: 0px 20px 0px 20px;
+	background: SlateGrey;
+	color: LightGrey;
+}
 /*--------------------------------------------------------------
 10.0 Content
 --------------------------------------------------------------*/
@@ -646,28 +679,7 @@ div#primary {
 	padding-left: 20%;
 	padding-right: 20%;
 }
-div#secondary widget-area {
-	padding-left: 10px;
-	padding-right: 10px;
-}
-aside.widget ul {
-	list-style: none;
-}
-aside.widget a {
-	text-decoration: none;
-	color: Yellow;
-	border-bottom: 1px Grey;
-}
-aside.widget a:hover {
-	color: White;
-	border-bottom: 1px White;
-}
-div.widget-area {
-	background: #fefefe;
-}
-aside.widget {
-	float: left;
-}
+
 /*--------------------------------------------------------------
 10.1 Posts and pages
 --------------------------------------------------------------*/

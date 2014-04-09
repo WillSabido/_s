@@ -20,26 +20,23 @@
     <div class="item active">
       <img src="./fc-elements/slides/slide1.jpg" alt="slide1">
       <div class="carousel-caption">
-        <h3>Our Mission</h3>
-	<p>To be a leading African investment bureau and be recognised as a trusted business partner for foreign business undertaking operations in Africa.</p>
+        <h3>Overview</h3>
+	<p>Text</p>
       </div>
     </div>
     <div class="item">
       <img src="./fc-elements/slides/slide2.jpg" alt="slide2">
       <div class="carousel-caption">
-        <h3>Our Associates</h3>
-	<p>Coming Soon - a section listing a number of African countries so that you are able to click directly to see the name of that locality's Associate firm and their respective office address and contact details.</p>
+        <h3>Services</h3>
+	<p>Coming Soon - a section listing our services.</p>
       </div>
     </div>
     <div class="item">
       <img src="./fc-elements/slides/slide3.jpg" alt="slide3">
       <div class="carousel-caption">
-        <h3>Our Focus</h3>
+        <h3>Services 2</h3>
 	<p>
-	Facilitate entry into the African Market.</br>
-	Assist potential investors to gain insights and navigate the African market.</br>
-	Provide useful insights on doing business in Africa.</br>
-	Assisting with attracting foreign investors into Africa.</br>
+	Text
 	</p>
       </div>
     </div>

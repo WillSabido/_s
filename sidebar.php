@@ -6,6 +6,7 @@
  */
 ?>
 	<div id="secondary" class="widget-area" role="complementary">
+	<div id="widget-wrapper">
 		<?php if ( ! dynamic_sidebar( 'sidebar-1' ) ) : ?>
 
 			<aside id="search" class="widget widget_search">
@@ -29,4 +30,5 @@
 			</aside>
 
 		<?php endif; // end sidebar widget area ?>
+	</div><!-- #widget-wrapper -->
 	</div><!-- #secondary -->
