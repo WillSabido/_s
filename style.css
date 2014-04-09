@@ -340,15 +340,20 @@ textarea {
 	vertical-align: top; /* Improves readability and alignment in all browsers */
 	width: 98%;
 }
-
+/*--------------------------------------------------------------
+4.1 Inputs & Buttons - Edits
+--------------------------------------------------------------*/
+nav#site-navigation input[type="search"] {
+	margin-top: 4px;
+	}
 /*--------------------------------------------------------------
 5.0 Navigation
 --------------------------------------------------------------*/
 .main-navigation, .main-navigation ul, .main-navigation ul ul, .main-navigation ul li {
-	background: #428bca;
+	background: #9c3a9c;
 }
 .main-navigation {
-	box-shadow: 0px 5px 3px #888888;
+	box-shadow: 0px 2px 1px #888888;
 }
 .main-navigation.affix {
 	position: fixed;
