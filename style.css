@@ -249,7 +249,17 @@ h2.site-description {
 	font-style: italic;
 	font-size: 1.3em;
 	color: #fefefe;
-
+	margin-bottom: 10px;
+}
+div.site-info {
+	font-size: 0.8em;
+	color: LightGrey;
+}
+div.site-info a {
+	color: SlateGrey;
+}
+div.site-info a:visited {
+	color: Grey;
 }
 /*--------------------------------------------------------------
 4.0 Inputs and buttons
@@ -612,8 +622,25 @@ body.home header.entry-header {
 }
 body.home .entry-content {
 	text-align: center;
-	background: Yellow;
+	background: LightGrey;
 	color: Black;
+	margin: 5px 10px 5px 10px;
+	-webkit-border-top-left-radius: 60px;
+	-webkit-border-top-right-radius: 60px;
+	-webkit-border-bottom-right-radius: 60px;
+	-webkit-border-bottom-left-radius: 60px;
+	-moz-border-radius-topleft: 60px;
+	-moz-border-radius-topright: 60px;
+	-moz-border-radius-bottomright: 60px;
+	-moz-border-radius-bottomleft: 60px;
+	border-top-left-radius: 60px;
+	border-top-right-radius: 60px;
+	border-bottom-right-radius: 60px;
+	border-bottom-left-radius: 60px;
+}
+div#content {
+	margin-left: 10px;
+	margin-right: 10px;
 }
 /*--------------------------------------------------------------
 10.1 Posts and pages
