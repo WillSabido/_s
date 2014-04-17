@@ -5,7 +5,8 @@
  * @package felejo
  */
 ?>
-	<div id="secondary" class="widget-area col-xs-6 col-md-4" role="complementary">
+	<div id="col-widgets" class="col-xs-6 col-md-4">
+	<div id="secondary" class="widget-area" role="complementary">
 	<div id="widget-wrapper">
 		<?php if ( ! dynamic_sidebar( 'sidebar-1' ) ) : ?>
 
@@ -32,3 +33,4 @@
 		<?php endif; // end sidebar widget area ?>
 	</div><!-- #widget-wrapper -->
 	</div><!-- #secondary -->
+	</div><!-- #col-widgets" -->
