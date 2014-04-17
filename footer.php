@@ -10,7 +10,7 @@
 
 	</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer" role="contentinfo">
+	<footer id="colophon" class="site-footer row" role="contentinfo">
 		<div class="site-info">
 			<span class="sep"> | </span>
 			<?php printf( __( 'Theme: %1$s by %2$s.', 'felejo' ), 'felejo', '<a href="http://webisabihosting.com/" rel="designer">Webi Sabi</a>' ); ?>
@@ -22,6 +22,6 @@
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
-
+</div><!-- #wrap -->
 </body>
 </html>

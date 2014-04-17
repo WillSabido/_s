@@ -41,8 +41,9 @@ and Blueprint http://www.blueprintcss.org/
 	10.2 - Asides
 	10.3 - Comments
 11.0 - Infinite scroll
-12.0 - Media
+12.0 - A/V Elements
 	12.1 - Carousel
+13.0 - Media Queries
 --------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
@@ -245,6 +246,18 @@ th {
 /*--------------------------------------------------------------
 3.1 Elements - Edits
 --------------------------------------------------------------*/
+#wrap {
+	margin: 0 auto;
+	padding: 0;
+	position: relative;
+}
+#masthead-wrap {
+	margin: 0 auto;
+	padding-bottom: 0;
+	padding-top: 0;
+	background-color: #222;
+	border-bottom: 1px solid #777;
+}
 h2.site-description {
 	font-style: italic;
 	font-size: 1.3em;
@@ -737,7 +750,7 @@ div#primary {
 }
 
 /*--------------------------------------------------------------
-12.0 Media
+12.0 A/V Elements
 --------------------------------------------------------------*/
 .page-content img.wp-smiley,
 .entry-content img.wp-smiley,
@@ -787,7 +800,7 @@ object {
 	max-width: 100%;
 }
 /*--------------------------------------------------------------
-12.1 Media - Carousel
+12.1 - Carousel
 --------------------------------------------------------------*/
 .carousel-inner > .item > img { margin: 0 auto; }
 .carousel-caption {
@@ -878,4 +891,140 @@ object {
 .carousel-caption ul {
 	text-indent: 20px;
 	margin: 0 0 35px 0px;
+}
+
+
+/*--------------------------------------------------------------
+13.0 Media Queries
+--------------------------------------------------------------*/
+/* for 1000px or less */
+@media screen and (max-width: 1000px) {
+	.header_container {
+	height: 100%;
+	width: 100%;
+}
+}
+
+/* for 980px or less */
+@media screen and (max-width: 980px) {
+	
+	#wrap {
+		padding:0;
+		width: 100%; 	
+	}
+	.header_container {
+	height: 100%;
+	width: 100%;
+}
+#masthead .site-introduction {
+		float: none;
+		padding: 0;
+		width: 100%;
+	}
+}
+
+/* for 800px or less */
+@media only screen and (max-width: 860px) {
+	.header_container {
+	height: 100%;
+	width: 100%;
+}
+}
+
+/* for 800px or less */
+@media only screen and (max-width: 800px) {
+
+	#main {
+		overflow: visible;
+	}
+	#content,
+	#primary,
+	#secondary,
+	#tertiary {
+		background: none;
+		float: none;
+		margin: 0;
+		padding: 0;
+	}
+	#primary,
+	#secondary,
+	#tertiary {
+		width: 100%;
+	}
+	.site-header site-introduction,
+	#main {
+		padding: 0.8em;
+	}
+	.header_container {
+	height: 100%;
+	width: 100%;
+}
+	
+}
+
+/* for 600px or less */
+@media screen and (max-width: 600px) {
+	
+	#branding img {
+		display: none;
+	}
+	
+	.header-image {
+		width:100%;
+		margin-top: 0px;
+		margin-left: auto;
+    	margin-right: auto;
+	}
+
+	.header_container {
+	height: 100%;
+	width: 100%;
+}
+
+	.site-main {
+    border: 0;
+}
+}
+
+
+/* --- Smartphones (portrait and landscape) --- */
+
+@media screen and (max-width : 480px) {
+
+	#masthead .site-introduction {
+		float: none;
+		padding: 0;
+		padding-left: 4px;
+		width: 100%;
+	}
+	
+	.header_container {
+	height: 100%;
+	width: 100%;
+}
+
+}
+
+/* --- IPhone5 (portrait and landscape) --- */
+
+@media screen and (max-width : 568px) {
+
+	#masthead .site-introduction {
+		float: none;
+		padding: 0;
+		width: 100%;
+	}
+	.header_container {
+	height: 100%;
+	width: 100%;
+}
+}
+
+
+/*  REMOVE MARGINS AS ALL GO FULL WIDTH AT 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+	.col { 
+		margin: 1% 0 1% 0%;
+	}
 }

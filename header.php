@@ -20,6 +20,7 @@
 </head>
 
 <body <?php body_class(); ?>>
+<div id="wrap" class="container-fluid">
 <div id="page" class="hfeed site">
 
 	<header id="masthead" class="site-header" role="banner">
@@ -52,5 +53,5 @@ require get_template_directory() . '/slider.php';
 			</aside>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
-
-	<div id="content" class="site-content">
+	
+	<div id="content" class="site-content row">

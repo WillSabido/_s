@@ -5,7 +5,7 @@
  * @package felejo
  */
 ?>
-	<div id="secondary" class="widget-area" role="complementary">
+	<div id="secondary" class="widget-area col-xs-6 col-md-4" role="complementary">
 	<div id="widget-wrapper">
 		<?php if ( ! dynamic_sidebar( 'sidebar-1' ) ) : ?>
 
