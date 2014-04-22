@@ -146,6 +146,9 @@ if (!is_admin()) {
 		// Bootstrap
 		wp_register_script('bootstrap-scripts', '//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js', array('jquery'), null, true);
 		wp_enqueue_script('bootstrap-scripts');
+		// Slider fade
+		wp_register_script('slider-scripts', './js/slider.js', array('jquery'), null, true);
+		wp_enqueue_script('slider-scripts');
 	}
 
 } // end if !is_admin

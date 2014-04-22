@@ -5,7 +5,7 @@
  * @package felejo
  */
 ?>
-<div id="ws-carousel" class="carousel slide" data-ride="carousel">
+<div id="ws-carousel" class="carousel slide carousel-fade" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
     <li data-target="#ws-carousel" data-slide-to="0" class="active"></li>
