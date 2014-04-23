@@ -9,7 +9,11 @@
 ?>
 
 	</div><!-- #content -->
-
+<div id="footer-widgets" class="row">
+<?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Footer')) : ?>
+	<div><h5>Content not found</h5></div>
+<?php endif; ?>
+</div><!-- # footer-widgets row -->
 	<footer id="colophon" class="site-footer row" role="contentinfo">
 		<div class="site-info">
 			<span class="sep"> | </span>
