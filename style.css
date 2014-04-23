@@ -266,6 +266,8 @@ h2.site-description {
 	margin-bottom: 10px;
 }
 div.site-info {
+	margin-left: 16px;
+	margin-right: 16px;
 	font-size: 0.8em;
 	color: LightGrey;
 }
@@ -274,6 +276,23 @@ div.site-info a {
 }
 div.site-info a:visited {
 	color: Grey;
+}
+footer {
+	background-color: LightGrey;
+	border-top:1px solid #fefefe;
+}
+aside a {
+	padding: 2px;
+	margin: 3px;
+	color: Green;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+aside a:hover {
+	color: LightGreen;
+	background-color: DarkSlateGrey;
+	text-decoration: none;
 }
 /*--------------------------------------------------------------
 4.0 Inputs and buttons
@@ -383,7 +402,7 @@ nav#site-navigation input[type="search"] {
 5.0 Navigation
 --------------------------------------------------------------*/
 .main-navigation, .main-navigation ul, .main-navigation ul ul, .main-navigation ul li {
-	background: #Black;
+	background: Black;
 }
 .main-navigation {
 	box-shadow: 0px 2px 1px #888888;
@@ -394,7 +413,7 @@ nav#site-navigation input[type="search"] {
 }
 .main-navigation a {
 	padding: 10px;
-	color: White;
+	color: LightGrey;
 }
 .main-navigation a:active {
 	color: DarkRed;
@@ -434,10 +453,10 @@ nav#site-navigation input[type="search"] {
 5.1 Links
 --------------------------------------------------------------*/
 a {
-	color: #379a9a;
+	color: Black;
 }
 a:visited {
-	color: purple;
+	color: DarkSlateGrey;
 }
 a:hover,
 a:focus,
@@ -449,6 +468,7 @@ a:active {
 5.2 Menus
 --------------------------------------------------------------*/
 .main-navigation {
+	background-color: Gold;
 	clear: both;
 	display: block;
 	float: left;
@@ -809,18 +829,9 @@ object {
     font-size: 1.2em;
     padding-left: 20px;
     padding-right: 20px;
-	-webkit-border-top-left-radius: 5px;
-	-webkit-border-top-right-radius: 60px;
-	-webkit-border-bottom-right-radius: 10px;
-	-webkit-border-bottom-left-radius: 5px;
-	-moz-border-radius-topleft: 5px;
-	-moz-border-radius-topright: 60px;
-	-moz-border-radius-bottomright: 10px;
-	-moz-border-radius-bottomleft: 5px;
-	border-top-left-radius: 5px;
-	border-top-right-radius: 60px;
-	border-bottom-right-radius: 10px;
-	border-bottom-left-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
     /* Fallback for web browsers that doesn't support RGBa */
     background: rgb(0, 0, 0);
     /* RGBa with 0.4 opacity */
@@ -894,36 +905,29 @@ object {
 	margin: 0 0 35px 0px;
 }
 /* Carousel Fade effect */
-.carousel-fade {
-  .carousel-inner {
-    .item {
-      opacity: 0;
-      transition-property: opacity;
-    }
-
-    .active {
-      opacity: 1;
-    }
-
-    .active.left,
-    .active.right {
-      left: 0;
-      opacity: 0;
-      z-index: 1;
-    }
-
-    .next.left,
-    .prev.right {
-      opacity: 1;
-    }
-  }
-
-  .carousel-control {
-    z-index: 2;
-  }
+.carousel.carousel-fade .item {
+  -webkit-transition: opacity 2s ease-in-out;
+  -moz-transition: opacity 2s ease-in-out;
+  -ms-transition: opacity 2s ease-in-out;
+  -o-transition: opacity 2s ease-in-out;
+  transition: opacity 2s ease-in-out;
+}
+.carousel.carousel-fade .active.left,
+.carousel.carousel-fade .active.right {
+  left: 0;
+  z-index: 2;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+.carousel.carousel-fade .next,
+.carousel.carousel-fade .prev {
+  left: 0;
+  z-index: 1;
 }
 
-
+.carousel.carousel-fade .carousel-control {
+  z-index: 3;
+}
 
 html, 
 body, 
@@ -943,6 +947,12 @@ body,
 
 .item:nth-child(3) {
   background: orange;
+}
+.item:nth-child(4) {
+  background: yellow;
+}
+.item:nth-child(5) {
+  background: green;
 }
 /*--------------------------------------------------------------
 13.0 Media Queries
