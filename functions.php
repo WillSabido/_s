@@ -67,17 +67,17 @@ function felejo_widgets_init() {
 	register_sidebar( array(
 		'name'          => __( 'Sidebar', 'felejo' ),
 		'id'            => 'sidebar-1',
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'before_widget' => '<aside id="%1$s" class="widget panel col-xs-12 col-md-9 %2$s">',
 		'after_widget'  => '</aside>',
-		'before_title'  => '<h1 class="widget-title">',
+		'before_title'  => '<h1 class="panel-heading panel-title widget-title">',
 		'after_title'   => '</h1>',
 	) );
 	register_sidebar( array(
 		'name'          => __( 'Footer', 'felejo' ),
 		'id'            => 'footer-1',
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'before_widget' => '<aside id="%1$s" class="widget panel col-xs-12 col-md-4 %2$s">',
 		'after_widget'  => '</aside>',
-		'before_title'  => '<h1 class="widget-title">',
+		'before_title'  => '<h1 class="panel-heading widget-title">',
 		'after_title'   => '</h1>',
 	) );
 }
@@ -155,7 +155,7 @@ if (!is_admin()) {
 		wp_register_script('bootstrap-scripts', '//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js', array('jquery'), null, true);
 		wp_enqueue_script('bootstrap-scripts');
 		// Slider fade
-		wp_register_script('slider-scripts', '/js/slider.js', array('jquery'), null, false);
+		wp_register_script('slider-scripts', get_template_directory_uri() .'/js/slider.js', array('jquery'), null, true);
 		wp_enqueue_script('slider-scripts');
 	}
 

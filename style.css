@@ -3,7 +3,7 @@ Theme Name: felejo
 Theme URI: http://webisabihosting.co.uk/felejo
 Author: Will Sabido
 Author URI: http://webisabihosting.co.uk/willsabido
-Description: Hi. I'm a starter theme called <code>felejo</code>, based on <em>underscores</em>, with Bootstrap integration. I'm a theme meant for hacking so don't use me as a <em>Parent Theme</em>. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for.
+Description: Hi. I'm a fluid theme called <code>felejo</code>, based on <em>underscores</em>, with Bootstrap integration. I'm a theme meant for hacking, so go nuts.
 Version: 0.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -274,7 +274,7 @@ div.site-info {
 	margin-left: 16px;
 	margin-right: 16px;
 	font-size: 0.8em;
-	color: LightGrey;
+	color: GhostWhite;
 }
 div.site-info a {
 	color: SlateGrey;
@@ -292,8 +292,8 @@ footer a:hover {
 	text-decoration: none;
 }
 aside a {
-	padding: 2px;
-	margin: 3px;
+	padding: 4px;
+	margin: 1px;
 	color: Green;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
@@ -303,6 +303,12 @@ aside a:hover {
 	color: LightGreen;
 	background-color: DarkSlateGrey;
 	text-decoration: none;
+}
+div#footer-widgets aside {
+	max-width: 33%;
+}
+div#footer-widgets {
+	background-color: #70807c;
 }
 /*--------------------------------------------------------------
 4.0 Inputs and buttons
@@ -415,7 +421,7 @@ nav#site-navigation input[type="search"] {
 	background: Black;
 }
 .main-navigation {
-	box-shadow: 0px 2px 1px #888888;
+	box-shadow: 0px 2px 1px #777;
 }
 .main-navigation.affix {
 	position: fixed;
@@ -434,7 +440,7 @@ nav#site-navigation input[type="search"] {
 .main-navigation a:hover {
 	text-decoration: none;
 	color: White;
-	background: #357ebd;
+	background: gold;
 }
 .main-navigation ul ul {
 	-webkit-border-top-left-radius: 5px;
@@ -478,7 +484,7 @@ a:active {
 5.2 Menus
 --------------------------------------------------------------*/
 .main-navigation {
-	background-color: Gold;
+	background-color: DarkRed;
 	clear: both;
 	display: block;
 	float: left;
@@ -646,7 +652,11 @@ a:active {
 9.0 Widgets
 --------------------------------------------------------------*/
 .widget {
-	background-color: #70807c;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background-color: #70777a;
 	color: White;
 	margin: 0 0 1.5em;
 }
@@ -666,6 +676,9 @@ a:active {
 div#secondary widget-area {
 	padding-left: 0px;
 	padding-right: 0px;
+}
+div#secondary aside {
+	padding: 5px;
 }
 aside.widget ul {
 	list-style: none;
@@ -690,9 +703,22 @@ aside.widget {
 div#widget-wrapper {
 	margin: 0 auto;
 	max-width: 1200px;
-	padding: 0px 20px 0px 20px;
-	background: SlateGrey;
+	padding: 20px;
+	background: GhostWhite;
 	color: LightGrey;
+}
+#col-widgets {
+	background: SlateGrey;
+}
+#col-widgets aside {
+	float: none;
+}
+div#col-widgets {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+div#footer-widgets aaside {
+	padding-top: 8px;
 }
 /*--------------------------------------------------------------
 10.0 Content
@@ -702,7 +728,7 @@ body.home header.entry-header {
 }
 body.home .entry-content {
 	text-align: center;
-	background: LightGrey;
+	background: white;
 	color: Black;
 	padding: 20px 10px 20px 10px;
 	-webkit-border-top-left-radius: 60px;
@@ -723,7 +749,9 @@ div#primary {
 	padding-left: 5%;
 	padding-right: 5%;
 }
-
+div#content {
+	background: whitesmoke;
+}
 /*--------------------------------------------------------------
 10.1 Posts and pages
 --------------------------------------------------------------*/
@@ -833,12 +861,27 @@ object {
 /*--------------------------------------------------------------
 12.1 - Carousel
 --------------------------------------------------------------*/
+.carousel {
+	padding-top: 24px;
+}
+.carousel-caption {
+	bottom: -30px;
+}
+.carousel-indicators {
+	bottom: 0px;
+	left: 10px;
+	margin-left: 2px;
+}
+.carousel-indicators li {
+	display: block;
+}
 .carousel-inner > .item > img { margin: 0 auto; }
 .carousel-caption {
     text-align: left;
-    font-size: 1.2em;
+    font-size: 1.1em;
     padding-left: 20px;
     padding-right: 20px;
+	padding-bottom: 0px;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
