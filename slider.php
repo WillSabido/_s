@@ -20,23 +20,23 @@
     <div class="item active">
       <img src="./wsd-elements/slides/slide1.jpg" alt="slide1">
       <div class="carousel-caption">
-        <h3>Overview</h3>
-	<p>Text</p>
+        <h3>Welcome message</h3>
+	<p>Introductory info text</p>
       </div>
     </div>
     <div class="item">
       <img src="./wsd-elements/slides/slide2.jpg" alt="slide2">
       <div class="carousel-caption">
-        <h3>Services</h3>
-	<p>Coming Soon - a section listing our services.</p>
+        <h3>About</h3>
+	<p>More introduction text</p>
       </div>
     </div>
     <div class="item">
       <img src="./wsd-elements/slides/slide3.jpg" alt="slide3">
       <div class="carousel-caption">
-        <h3>Services 2</h3>
+        <h3>Services</h3>
 	<p>
-	Text
+	Coming Soon - a section listing our services.
 	</p>
       </div>
     </div>
@@ -44,7 +44,7 @@
       <img src="./wsd-elements/slides/slide4.jpg" alt="slide4">
       <div class="carousel-caption">
         <h3>Our approach</h3>
-	<p>We work with our Associates across Africa to provide a holistic top quality service.<br/>We can connect you to the right advisors in any location across Africa.</p>
+	<p>Tag line one.<br/>Tag line two.</p>
       </div>
     </div>
     <div class="item">

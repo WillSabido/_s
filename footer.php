@@ -10,7 +10,7 @@
 
 	</div><!-- #content -->
 <div id="footer-widgets" class="row">
-<div class="col-lg-10 darkBody" style="float: none; margin: 0 auto;">
+<div class="col-lg-12 darkBody" style="float: none; margin: 0 auto;">
 <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Footer')) : ?>
 	<div><h5>Content not found</h5></div>
 <?php endif; ?>

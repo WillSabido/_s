@@ -77,7 +77,7 @@ function felejo_widgets_init() {
 		'id'            => 'footer-1',
 		'before_widget' => '<aside id="%1$s" class="widget panel col-xs-12 col-md-4 %2$s">',
 		'after_widget'  => '</aside>',
-		'before_title'  => '<h1 class="panel-heading widget-title">',
+		'before_title'  => '<h1 class="panel-heading panel-title widget-title">',
 		'after_title'   => '</h1>',
 	) );
 }
