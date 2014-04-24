@@ -9,13 +9,15 @@
 ?>
 
 	</div><!-- #content -->
-<div id="footer-widgets" class="row">
-<div class="col-lg-12 darkBody" style="float: none; margin: 0 auto;">
+<div class="container-fluid">
+<div id="footer-widgets" class="row row-centered">
+<div class="col-xs-9 col-centered" style="float: none; margin: 0 auto;">
 <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Footer')) : ?>
-	<div><h5>Content not found</h5></div>
+	<div><p>Content not found</p></div><!-- END widget full column -->
 <?php endif; ?>
-</div>
-</div><!-- # footer-widgets row -->
+</div><!-- END widget row -->
+</div><!-- END # footer-widgets row -->
+</div><!-- END # footer-widgets container -->
 	<footer id="colophon" class="site-footer row" role="contentinfo">
 		<div class="site-info">
 			<p class="credits twocol pull-left"><?php echo '&copy;' . date('Y') . '&nbsp;' . get_bloginfo ( 'name' ); ?> All rights reserved.</p>

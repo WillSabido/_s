@@ -267,8 +267,9 @@ th {
 h2.site-description {
 	font-style: italic;
 	font-size: 1.3em;
-	color: #fefefe;
+	color: whitesmoke;
 	margin-bottom: 10px;
+	text-shadow: 2px 2px 2px darkslategrey;
 }
 div.site-info {
 	margin-left: 16px;
@@ -277,7 +278,7 @@ div.site-info {
 	color: GhostWhite;
 }
 div.site-info a {
-	color: SlateGrey;
+	color: goldenrod;
 }
 div.site-info a:visited {
 	color: grey;
@@ -285,7 +286,7 @@ div.site-info a:visited {
 footer {
 	color: white;
 	background-color: LightGrey;
-	border-top:1px solid #fefefe;
+	border-top:1px solid ivory;
 }
 footer a:hover {
 	color: white;
@@ -305,10 +306,11 @@ aside a:hover {
 	text-decoration: none;
 }
 div#footer-widgets aside {
+	float: left;
 	max-width: 25%;
 }
 div#footer-widgets {
-	background-color: #70807c;
+	background-color: goldenrod;
 }
 /*--------------------------------------------------------------
 4.0 Inputs and buttons
@@ -420,6 +422,12 @@ nav#site-navigation input[type="search"] {
 .main-navigation, .main-navigation ul, .main-navigation ul ul, .main-navigation ul li {
 	background: Black;
 }
+.main-navigation > ul {
+	margin-left: 30px;
+}
+.main-navigation > ul ul {
+	margin-left: 0px;
+}
 .main-navigation {
 	box-shadow: 0px 2px 1px #777;
 }
@@ -439,7 +447,7 @@ nav#site-navigation input[type="search"] {
 }
 .main-navigation a:hover {
 	text-decoration: none;
-	color: White;
+	color: darkslategrey;
 	background: gold;
 }
 .main-navigation ul ul {
@@ -484,15 +492,18 @@ a:active {
 5.2 Menus
 --------------------------------------------------------------*/
 .main-navigation {
-	background-color: DarkRed;
+	background-color: black;
 	clear: both;
 	display: block;
 	float: left;
 	width: 100%;
 }
+.main-navigation ul:nth-child(1) {
+	margin-left: 30px;
+}
 .main-navigation ul {
 	list-style: none;
-	margin: 0 10% 0 0;
+	margin: 0px;
 	padding-left: 0;
 }
 .main-navigation ul:nth-child(2) {
@@ -656,7 +667,7 @@ a:active {
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
-	background-color: #70777a;
+	background-color: goldenrod;
 	color: White;
 	margin: 1em 1em;
 }
@@ -685,10 +696,10 @@ aside.widget ul {
 }
 aside.widget a {
 	text-decoration: none;
-	color: Yellow;
+	color: seashell;
 }
 #secondary li {
-	border-bottom: 1px Grey;
+	border-bottom: 1px ivory;
 }
 aside.widget a:hover {
 	color: White;
@@ -718,7 +729,7 @@ div#col-widgets {
 	padding-left: 0px;
 	padding-right: 0px;
 }
-div#footer-widgets aaside {
+div#footer-widgets aside {
 	padding-top: 8px;
 }
 /*--------------------------------------------------------------
@@ -752,6 +763,31 @@ div#primary {
 }
 div#content {
 	background: whitesmoke;
+	padding: 0 15px 0 15px;
+}
+/* centered columns styles */
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+}
+.col-fixed {
+    /* custom width */
+    width:320px;
+}
+.col-min {
+    /* custom min width */
+    min-width:320px;
+}
+.col-max {
+    /* custom max width */
+    max-width:320px;
 }
 /*--------------------------------------------------------------
 10.1 Posts and pages
@@ -778,7 +814,9 @@ div#content {
 	clear: both;
 	margin: 0 0 1.5em;
 }
-
+.entry-meta {
+	margin: 10px 0 10px 0;
+}
 /*--------------------------------------------------------------
 10.2 Asides
 --------------------------------------------------------------*/
@@ -863,7 +901,8 @@ object {
 12.1 - Carousel
 --------------------------------------------------------------*/
 .carousel {
-	padding-top: 24px;
+	background: black;
+	padding-top: 22px;
 }
 .carousel-caption {
 	bottom: -30px;
@@ -919,7 +958,7 @@ object {
     /* Fallback for web browsers that doesn't support RGBa */
     background: rgb(0, 0, 0);
     /* RGBa with 0.6 opacity */
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.9);
     /* For IE 5.5 - 7*/
     filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000, endColorstr=#4C000000);
     /* For IE 8*/
@@ -942,7 +981,7 @@ object {
     /* Fallback for web browsers that doesn't support RGBa */
     background: rgb(0, 0, 0);
     /* RGBa with 0.5 opacity */
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.8);
     /* For IE 5.5 - 7*/
     filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000, endColorstr=#4C000000);
     /* For IE 8*/
@@ -1003,10 +1042,16 @@ body,
   background: orange;
 }
 .item:nth-child(4) {
-  background: yellow;
+  background: goldenrod;
 }
 .item:nth-child(5) {
   background: green;
+}
+.item:nth-child(6) {
+  background: darkolivegreen;
+}
+.carousel-control span.glyphicon {
+	display:none;
 }
 /*--------------------------------------------------------------
 13.0 Media Queries

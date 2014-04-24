@@ -13,6 +13,7 @@
     <li data-target="#ws-carousel" data-slide-to="2"></li>
     <li data-target="#ws-carousel" data-slide-to="3"></li>
     <li data-target="#ws-carousel" data-slide-to="4"></li>
+    <li data-target="#ws-carousel" data-slide-to="5"></li>
   </ol>
 
   <!-- Wrapper for slides -->
@@ -44,14 +45,21 @@
       <img src="./wsd-elements/slides/slide4.jpg" alt="slide4">
       <div class="carousel-caption">
         <h3>Our approach</h3>
-	<p>Tag line one.<br/>Tag line two.</p>
+	<p>Tag line.</p>
       </div>
     </div>
     <div class="item">
       <img src="./wsd-elements/slides/slide5.jpg" alt="slide5">
       <div class="carousel-caption">
         <h3>Site under construction</h3>
-	<p>Content will be added in the near future. In the meantime if you'd like to find out a bit more about our services please get in touch to <a href="./contact"><button type="button" class="btn btn-default btn-lg">arrange a consultation</button></a></p>
+	<p>Content will be added in the near future.</p>
+      </div>
+    </div>
+    <div class="item">
+      <img src="./wsd-elements/slides/slide5.jpg" alt="slide6">
+      <div class="carousel-caption">
+        <h3>Site under construction</h3>
+	<p>In the meantime if you'd like to find out a bit more about our services please get in touch to <a href="./contact"><button type="button" class="btn btn-default btn-lg">arrange a consultation</button></a></p>
       </div>
     </div>
   </div>

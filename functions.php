@@ -67,7 +67,7 @@ function felejo_widgets_init() {
 	register_sidebar( array(
 		'name'          => __( 'Sidebar', 'felejo' ),
 		'id'            => 'sidebar-1',
-		'before_widget' => '<aside id="%1$s" class="widget panel col-xs-12 col-md-9 %2$s">',
+		'before_widget' => '<aside id="%1$s" class="widget panel col-xs-10 col-md-9 %2$s">',
 		'after_widget'  => '</aside>',
 		'before_title'  => '<h1 class="panel-heading panel-title widget-title">',
 		'after_title'   => '</h1>',
@@ -75,10 +75,10 @@ function felejo_widgets_init() {
 	register_sidebar( array(
 		'name'          => __( 'Footer', 'felejo' ),
 		'id'            => 'footer-1',
-		'before_widget' => '<aside id="%1$s" class="widget panel col-xs-12 col-md-4 %2$s">',
+		'before_widget' => '<aside id="%1$s" class="widget panel col-xs-6 col-md-3 col-centered col-fixed %2$s">',
 		'after_widget'  => '</aside>',
-		'before_title'  => '<h1 class="panel-heading panel-title widget-title">',
-		'after_title'   => '</h1>',
+		'before_title'  => '<div class="panel-heading"><h1 class="panel-title widget-title">',
+		'after_title'   => '</h1></div>',
 	) );
 }
 add_action( 'widgets_init', 'felejo_widgets_init' );

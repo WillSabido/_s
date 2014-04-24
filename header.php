@@ -42,15 +42,10 @@ require get_template_directory() . '/slider.php';
 			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
 		</div>
-
 		<nav id="site-navigation" class="main-navigation" role="navigation">
 			<h1 class="menu-toggle"><?php _e( 'Menu', 'felejo' ); ?></h1>
 			<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'felejo' ); ?></a>
-
 			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-			<aside id="search" class="pull-right widget_search">
-				<?php get_search_form(); ?>
-			</aside>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 	
