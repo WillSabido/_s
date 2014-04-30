@@ -29,7 +29,7 @@ function felejo_custom_header_setup() {
 		'default-image'          => '',
 		'default-text-color'     => '000000',
 		'width'                  => 1000,
-		'height'                 => 250,
+		'height'                 => 180,
 		'flex-height'            => true,
 		'wp-head-callback'       => 'felejo_header_style',
 		'admin-head-callback'    => 'felejo_admin_header_style',

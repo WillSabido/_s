@@ -209,8 +209,16 @@ div.site-branding {
 	z-index: 10;
 	padding: 3px;
 }
-div.site-branding a:hover {
+div.site-branding a, div.site-branding a:visited {
+	font-family:Papyrus, Helvetica, Arial, sans-serif;
+	font-size: 2em;
+	font-weight: bold;
+	color: rgba(255,255,255,0.6);
+	text-shadow: 2px 8px 6px rgba(180,180,180,0.2), 0px -5px 14px rgba(80,80,80,0.3);
 	text-decoration: none;
+}
+div.site-branding a:hover {
+	text-shadow: 2px 8px 14px rgba(255,255,255,0.2), 0px -5px 14px rgba(255,255,255,0.4);
 }
 hr {
 	background-color: #ccc;
@@ -252,10 +260,9 @@ th {
 3.1 Elements - Edits
 --------------------------------------------------------------*/
 #wrap {
-	margin: 0 auto;
+	margin: 0 16px;
 	padding: 0;
 	position: relative;
-	background-color: #fefefe;
 }
 #masthead-wrap {
 	margin: 0 auto;
@@ -264,18 +271,25 @@ th {
 	background-color: #222;
 	border-bottom: 1px solid #777;
 }
+#masthead-wrap img {
+	max-height:180px;
+}
+site-branding {
+	padding: 20px 10px;
+}
 h2.site-description {
+	font-family:Tahoma, Helvetica, Arial, sans-serif;
+    color: rgba(0,0,0,0.6);
+    text-shadow: 2px 2px 3px rgba(255,255,255,0.3);
 	font-style: italic;
-	font-size: 1.3em;
-	color: whitesmoke;
+	font-size: 1.4em;
 	margin-bottom: 10px;
-	text-shadow: 2px 2px 2px darkslategrey;
 }
 div.site-info {
 	margin-left: 16px;
 	margin-right: 16px;
 	font-size: 0.8em;
-	color: GhostWhite;
+	color: ghostwhite;
 }
 div.site-info a {
 	color: goldenrod;
@@ -285,24 +299,25 @@ div.site-info a:visited {
 }
 footer {
 	color: white;
-	background-color: LightGrey;
-	border-top:1px solid ivory;
+	background-color: lightgrey;
+	border-top:1px solid cornsilk;
 }
-footer a:hover {
+footer a {
+	color: darkslategrey;
+}
+footer a:hover, footer a:visited, footer a:active {
 	color: white;
-	text-decoration: none;
 }
 aside a {
 	padding: 4px;
-	margin: 1px;
-	color: Green;
+	margin: 2px;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
 }
 aside a:hover {
-	color: LightGreen;
-	background-color: DarkSlateGrey;
+	color: white;
+	background-color: darkgoldenrod;
 	text-decoration: none;
 }
 div#footer-widgets aside {
@@ -310,7 +325,10 @@ div#footer-widgets aside {
 	max-width: 25%;
 }
 div#footer-widgets {
-	background-color: goldenrod;
+	background-color: palegoldenrod;
+}
+div#footer-widgets panel {
+	background-color: darkkhaki;
 }
 /*--------------------------------------------------------------
 4.0 Inputs and buttons
@@ -464,9 +482,17 @@ nav#site-navigation input[type="search"] {
 	border-bottom-right-radius: 20px;
 	border-bottom-left-radius: 5px;
 }
-
 /*--------------------------------------------------------------
-5.0.1 Bootstrap Navbar
+5.0.1 Menu Toggle (mobile)
+--------------------------------------------------------------*/
+h1.menu-toggle a, h1.menu-toggle a:visited {
+	color: white;
+}
+h1.menu-toggle a:active, h1.menu-toggle a:focus {
+	color: darkslategrey;
+}
+/*--------------------------------------------------------------
+5.0.2 Bootstrap Navbar
 --------------------------------------------------------------*/
 .navbar {
 	min-height: 42px;
@@ -492,6 +518,7 @@ a:active {
 5.2 Menus
 --------------------------------------------------------------*/
 .main-navigation {
+	font-family:futura, tahoma, sans-serif;
 	background-color: black;
 	clear: both;
 	display: block;
@@ -663,24 +690,20 @@ a:active {
 9.0 Widgets
 --------------------------------------------------------------*/
 .widget {
+	font-family: Futura, sans-serif;
 	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
-	background-color: goldenrod;
+	background-color: darkkhaki;
 	color: White;
 	margin: 1em 1em;
 }
-
 /* Make sure select elements fit in widgets */
 .widget select {
 	max-width: 100%;
 }
 
-/* Search widget */
-.widget_search .search-submit {
-	display: none;
-}
 /*--------------------------------------------------------------
 9.1 Widgets - Edit
 --------------------------------------------------------------*/
@@ -705,9 +728,6 @@ aside.widget a:hover {
 	color: White;
 	border-bottom: 1px White;
 }
-div.widget-area {
-	background: #fefefe;
-}
 aside.widget {
 	float: left;
 }
@@ -725,45 +745,49 @@ div#widget-wrapper {
 #col-widgets aside {
 	float: none;
 }
-div#col-widgets {
-	padding-left: 0px;
-	padding-right: 0px;
-}
 div#footer-widgets aside {
-	padding-top: 8px;
+	min-width: 360px;
+	padding: 10px;
+	float: left;
 }
+#footer-widgets div.panel {
+	background: darkkhaki;
+}
+
 /*--------------------------------------------------------------
-10.0 Content
+10.0 Content ( cut l 758 - body.home .entry-content ) div#primary.content-area
 --------------------------------------------------------------*/
 body.home header.entry-header {
 	display: none;
 }
-body.home .entry-content {
-	text-align: center;
+#col-main {
 	background: white;
 	color: Black;
-	padding: 20px 10px 20px 10px;
-	-webkit-border-top-left-radius: 60px;
-	-webkit-border-top-right-radius: 60px;
-	-webkit-border-bottom-right-radius: 60px;
-	-webkit-border-bottom-left-radius: 60px;
-	-moz-border-radius-topleft: 60px;
-	-moz-border-radius-topright: 60px;
-	-moz-border-radius-bottomright: 60px;
-	-moz-border-radius-bottomleft: 60px;
-	border-top-left-radius: 60px;
-	border-top-right-radius: 60px;
-	border-bottom-right-radius: 60px;
-	border-bottom-left-radius: 60px;
+	padding: 20px;
+	margin: 20px 0;
+	-webkit-border-top-left-radius: 20px;
+	-webkit-border-top-right-radius: 20px;
+	-webkit-border-bottom-right-radius: 20px;
+	-webkit-border-bottom-left-radius: 20px;
+	-moz-border-radius-topleft: 20px;
+	-moz-border-radius-topright: 20px;
+	-moz-border-radius-bottomright: 20px;
+	-moz-border-radius-bottomleft: 20px;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 20px;
 	box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.3);
 }
+body.home .entry-content {
+	text-align: center;
+}
 div#primary {
-	padding-left: 5%;
-	padding-right: 5%;
+	padding: 0 10%;
 }
 div#content {
 	background: whitesmoke;
-	padding: 0 15px 0 15px;
+	padding: 0 15px;
 }
 /* centered columns styles */
 .row-centered {
@@ -901,8 +925,9 @@ object {
 12.1 - Carousel
 --------------------------------------------------------------*/
 .carousel {
+	font-family: Tahoma, sans-serif;
 	background: black;
-	padding-top: 22px;
+	min-height: 180px;
 }
 .carousel-caption {
 	bottom: -30px;
@@ -941,6 +966,8 @@ object {
 	list-style-type: none;
 }
 .carousel-caption h3 {
+	font-family: Tahoma, sans-serif;
+	font-weight: bold;	
 	text-indent: 20px;
 	padding: 5px;
 	-webkit-border-top-left-radius: 5px;
@@ -968,15 +995,15 @@ object {
 	padding: 8px 8px 12px 12px;
 	-webkit-border-top-left-radius: 0px;
 	-webkit-border-top-right-radius: 0px;
-	-webkit-border-bottom-right-radius: 10px;
+	-webkit-border-bottom-right-radius: 0px;
 	-webkit-border-bottom-left-radius: 5px;
 	-moz-border-radius-topleft: 0px;
 	-moz-border-radius-topright: 0px;
-	-moz-border-radius-bottomright: 10px;
+	-moz-border-radius-bottomright: 0px;
 	-moz-border-radius-bottomleft: 5px;
 	border-top-left-radius: 0px;
 	border-top-right-radius: 0px;
-	border-bottom-right-radius: 10px;
+	border-bottom-right-radius: 0px;
 	border-bottom-left-radius: 5px;
     /* Fallback for web browsers that doesn't support RGBa */
     background: rgb(0, 0, 0);
@@ -1031,24 +1058,24 @@ body,
 }
 
 .item:nth-child(1) {
-  background: darkred;
+  background: honeydew;
 }
 
 .item:nth-child(2) {
-  background: red;
+  background: mintcream;
 }
 
 .item:nth-child(3) {
-  background: orange;
+  background: mistyrose;
 }
 .item:nth-child(4) {
-  background: goldenrod;
+  background: seashell;
 }
 .item:nth-child(5) {
-  background: green;
+  background: ivory;
 }
 .item:nth-child(6) {
-  background: darkolivegreen;
+  background: beige;
 }
 .carousel-control span.glyphicon {
 	display:none;

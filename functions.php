@@ -61,7 +61,7 @@ endif; // felejo_setup
 add_action( 'after_setup_theme', 'felejo_setup' );
 
 /**
- * Register widgetized area and update sidebar with default widgets.
+ * Register widgetized areas and update sidebar with default widgets.
  */
 function felejo_widgets_init() {
 	register_sidebar( array(
@@ -75,8 +75,8 @@ function felejo_widgets_init() {
 	register_sidebar( array(
 		'name'          => __( 'Footer', 'felejo' ),
 		'id'            => 'footer-1',
-		'before_widget' => '<aside id="%1$s" class="widget panel col-xs-6 col-md-3 col-centered col-fixed %2$s">',
-		'after_widget'  => '</aside>',
+		'before_widget' => '<aside id="%1$s" class="widget footer col-xs-6 col-md-3 col-centered col-fixed %2$s"><div class="panel">',
+		'after_widget'  => '</div></aside>',
 		'before_title'  => '<div class="panel-heading"><h1 class="panel-title widget-title">',
 		'after_title'   => '</h1></div>',
 	) );

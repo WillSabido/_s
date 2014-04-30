@@ -19,47 +19,47 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner">
     <div class="item active">
-      <img src="./wsd-elements/slides/slide1.jpg" alt="slide1">
+      <img src="./fc-elements/slides/slide1.png" alt="slide1">
       <div class="carousel-caption">
-        <h3>Welcome message</h3>
-	<p>Introductory info text</p>
+        <h3>Welcome to FELEJO Consulting</h3>
+	<p>Business advisors and management consultants.</p>
       </div>
     </div>
     <div class="item">
-      <img src="./wsd-elements/slides/slide2.jpg" alt="slide2">
+      <img src="./fc-elements/slides/slide2.png" alt="slide2">
       <div class="carousel-caption">
-        <h3>About</h3>
-	<p>More introduction text</p>
+        <h3>Customer targeted solutions</h3>
+	<p>To help you establish a presence and successfully navigate the Cameroon market.</p>
       </div>
     </div>
     <div class="item">
-      <img src="./wsd-elements/slides/slide3.jpg" alt="slide3">
+      <img src="./fc-elements/slides/slide3.png" alt="slide3">
       <div class="carousel-caption">
         <h3>Services</h3>
 	<p>
-	Coming Soon - a section listing our services.
+	Accounting & Payroll // Human Resources Consulting // Professional Employment Organization (PEO)
 	</p>
       </div>
     </div>
     <div class="item">
-      <img src="./wsd-elements/slides/slide4.jpg" alt="slide4">
+      <img src="./fc-elements/slides/slide4.png" alt="slide4">
       <div class="carousel-caption">
-        <h3>Our approach</h3>
-	<p>Tag line.</p>
+        <h3>Services</h3>
+	<p>Management and Statutory Reporting // Corporate and Staff Training</p>
       </div>
     </div>
     <div class="item">
-      <img src="./wsd-elements/slides/slide5.jpg" alt="slide5">
+      <img src="./fc-elements/slides/slide5.png" alt="slide5">
       <div class="carousel-caption">
-        <h3>Site under construction</h3>
-	<p>Content will be added in the near future.</p>
+        <h3>Like to know more?</h3>
+	<p>Check out our <a href="./services/">services</a> page. Further content will be added in the near future.</p>
       </div>
     </div>
     <div class="item">
-      <img src="./wsd-elements/slides/slide5.jpg" alt="slide6">
+      <img src="./fc-elements/slides/slide5.png" alt="slide6">
       <div class="carousel-caption">
-        <h3>Site under construction</h3>
-	<p>In the meantime if you'd like to find out a bit more about our services please get in touch to <a href="./contact"><button type="button" class="btn btn-default btn-lg">arrange a consultation</button></a></p>
+        <h3>Like to know more?</h3>
+	<p>To find out a bit more about our services please do <a href="./contact"><button type="button" class="btn btn-default">get in touch</button></a></p>
       </div>
     </div>
   </div>

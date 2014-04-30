@@ -19,11 +19,11 @@
 <?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
 <div id="wrap" class="container-fluid">
+<body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
 
-	<header id="masthead" class="site-header" role="banner">
+	<header id="masthead" class="site-header row" role="banner">
 	<!-- Load the slider on frontpage, load header on other pages -->
 	<?php if ( is_home() || is_front_page() ) : if (!is_admin()) {
 /**
