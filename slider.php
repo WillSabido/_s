@@ -5,7 +5,7 @@
  * @package felejo
  */
 ?>
-<div id="ws-carousel" class="carousel slide carousel-fade" data-ride="carousel">
+<div id="ws-carousel" class="carousel slide carousel-fade letterpress" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
     <li data-target="#ws-carousel" data-slide-to="0" class="active"></li>
@@ -52,14 +52,14 @@
       <img src="./fc-elements/slides/slide5.png" alt="slide5">
       <div class="carousel-caption">
         <h3>Like to know more?</h3>
-	<p>Check out our <a href="./services/">services</a> page. Further content will be added in the near future.</p>
+	<p>Check out our <a href="./categories/services">services</a> page.</p>
       </div>
     </div>
     <div class="item">
       <img src="./fc-elements/slides/slide5.png" alt="slide6">
       <div class="carousel-caption">
         <h3>Like to know more?</h3>
-	<p>To find out a bit more about our services please do <a href="./contact"><button type="button" class="btn btn-default">get in touch</button></a></p>
+	<p>To find out a bit more about our services please do <a href="./contact">get in touch</a>.</p>
       </div>
     </div>
   </div>

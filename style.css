@@ -198,10 +198,20 @@ small {
 big {
 	font-size: 125%;
 }
+/*--------------------------------------------------------------
+2.1 Typography - Edits (letterpress)
+--------------------------------------------------------------*/
+.letterpress {
+	color: rgba(100,100,100,0.6);
+	text-shadow: 2px 8px 6px rgba(180,180,180,0.2), 0px -5px 7px rgba(80,80,80,0.3);
+}
 
 /*--------------------------------------------------------------
 3.0 Elements
 --------------------------------------------------------------*/
+div#page {
+	margin: 0px 10px;
+}
 div.site-branding {
 	position: absolute;
 	top: 0px;
@@ -260,9 +270,8 @@ th {
 3.1 Elements - Edits
 --------------------------------------------------------------*/
 #wrap {
-	margin: 0 16px;
+	margin: 0;
 	padding: 0;
-	position: relative;
 }
 #masthead-wrap {
 	margin: 0 auto;
@@ -291,45 +300,18 @@ div.site-info {
 	font-size: 0.8em;
 	color: ghostwhite;
 }
-div.site-info a {
-	color: goldenrod;
-}
-div.site-info a:visited {
-	color: grey;
-}
 footer {
 	color: white;
-	background-color: lightgrey;
-	border-top:1px solid cornsilk;
+	background-color: none;
+	border-top:1px solid goldenrod;
 }
 footer a {
-	color: darkslategrey;
+	color: beige;
 }
 footer a:hover, footer a:visited, footer a:active {
-	color: white;
+	color: ivory;
 }
-aside a {
-	padding: 4px;
-	margin: 2px;
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
-	border-radius: 3px;
-}
-aside a:hover {
-	color: white;
-	background-color: darkgoldenrod;
-	text-decoration: none;
-}
-div#footer-widgets aside {
-	float: left;
-	max-width: 25%;
-}
-div#footer-widgets {
-	background-color: palegoldenrod;
-}
-div#footer-widgets panel {
-	background-color: darkkhaki;
-}
+
 /*--------------------------------------------------------------
 4.0 Inputs and buttons
 --------------------------------------------------------------*/
@@ -485,11 +467,11 @@ nav#site-navigation input[type="search"] {
 /*--------------------------------------------------------------
 5.0.1 Menu Toggle (mobile)
 --------------------------------------------------------------*/
-h1.menu-toggle a, h1.menu-toggle a:visited {
+.menu-toggle a, .menu-toggle a:visited {
 	color: white;
 }
-h1.menu-toggle a:active, h1.menu-toggle a:focus {
-	color: darkslategrey;
+.menu-toggle a:active, .menu-toggle a:focus {
+	color: goldenrod;
 }
 /*--------------------------------------------------------------
 5.0.2 Bootstrap Navbar
@@ -695,7 +677,7 @@ a:active {
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
-	background-color: darkkhaki;
+	background-color: black;
 	color: White;
 	margin: 1em 1em;
 }
@@ -736,7 +718,6 @@ div#widget-wrapper {
 	max-width: 1200px;
 	margin-top: 3px;
 	padding: 20px;
-	background: whitesmoke;
 	color: LightGrey;
 }
 #col-widgets {
@@ -746,12 +727,34 @@ div#widget-wrapper {
 	float: none;
 }
 div#footer-widgets aside {
-	min-width: 360px;
+	min-width: 300px;
 	padding: 10px;
 	float: left;
 }
 #footer-widgets div.panel {
-	background: darkkhaki;
+	background: black;
+}
+aside a {
+	padding: 4px;
+	margin: 2px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+aside a:hover {
+	color: white;
+	background-color: darkgoldenrod;
+	text-decoration: none;
+}
+div#footer-widgets aside {
+	float: left;
+	max-width: 25%;
+}
+div#footer-widgets {
+	background-color:rgba(255,248,220,0.4);
+}
+div#footer-widgets panel {
+	background-color: black;
 }
 
 /*--------------------------------------------------------------
@@ -786,8 +789,8 @@ div#primary {
 	padding: 0 10%;
 }
 div#content {
-	background: whitesmoke;
-	padding: 0 15px;
+	background-color:rgba(245,245,245,0.7);
+	padding: 0 42px;
 }
 /* centered columns styles */
 .row-centered {
@@ -839,6 +842,7 @@ div#content {
 	margin: 0 0 1.5em;
 }
 .entry-meta {
+	display:none;
 	margin: 10px 0 10px 0;
 }
 /*--------------------------------------------------------------
@@ -931,8 +935,10 @@ object {
 }
 .carousel-caption {
 	bottom: -30px;
+	left: 8px;
 }
 .carousel-indicators {
+	width: auto;
 	bottom: 0px;
 	left: 10px;
 	margin-left: 2px;
@@ -1080,6 +1086,14 @@ body,
 .carousel-control span.glyphicon {
 	display:none;
 }
+.carousel-caption a {
+	text-decoration:none;
+	font-weight: bold;
+	color: ivory;
+}
+.carousel-caption a:visited, .carousel-caption a:hover {
+	color: goldenrod;
+}
 /*--------------------------------------------------------------
 13.0 Media Queries
 --------------------------------------------------------------*/
@@ -1170,8 +1184,12 @@ body,
 	.site-main {
     border: 0;
 }
+	.carousel-indicators, .carousel-control {
+		display: none;
 }
-
+	.btn-block {
+		text-overflow: wrap;
+}
 
 /* --- Smartphones (portrait and landscape) --- */
 
