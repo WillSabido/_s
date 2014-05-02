@@ -20,9 +20,7 @@
 		<div class="site-info">
 			<p class="credits twocol pull-left"><?php echo '&copy;' . date('Y') . '&nbsp;' . get_bloginfo ( 'name' ); ?> All rights reserved.</p>
 			<p class="credits twocol pull-right">
-				<?php echo 'Web development and hosting by <a href="http://webisabihosting.co.uk" target="_blank">WebiSabi</a>'; ?>
-				<span class="sep"> | </span>
-				<?php printf( __( 'Theme: %1$s by %2$s.', 'felejo' ), 'felejo', '<a href="http://webisabihosting.com/" rel="designer">Webi Sabi</a>' ); ?>
+				<?php echo 'Web development and hosting by <a href="http://webisabihosting.co.uk" target="_blank" rel="designer">WebiSabi</a>'; ?>
 			</p>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->

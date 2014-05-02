@@ -5,7 +5,7 @@
  * @package felejo
  */
 ?>
-<div id="ws-carousel" class="carousel slide carousel-fade letterpress" data-ride="carousel">
+<div id="ws-carousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="6000">
   <!-- Indicators -->
   <ol class="carousel-indicators">
     <li data-target="#ws-carousel" data-slide-to="0" class="active"></li>
