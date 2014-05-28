@@ -5,7 +5,7 @@
  * @package felejo
  */
 ?>
-<div id="ws-carousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="6000">
+<div id="ws-carousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="12000">
   <!-- Indicators -->
   <ol class="carousel-indicators">
     <li data-target="#ws-carousel" data-slide-to="0" class="active"></li>
@@ -21,7 +21,7 @@
     <div class="item active">
       <img src="./fc-elements/slides/slide1.png" alt="slide1">
       <div class="carousel-caption">
-        <h3>Welcome to FELEJO Consulting</h3>
+        <h3>Introducing FELEJO Consulting</h3>
 	<p>Business advisors and management consultants.</p>
       </div>
     </div>
@@ -29,7 +29,7 @@
       <img src="./fc-elements/slides/slide2.png" alt="slide2">
       <div class="carousel-caption">
         <h3>Customer targeted solutions</h3>
-	<p>To help you establish a presence and successfully navigate the Cameroon market.</p>
+	<p>To help you establish a presence and successfully navigate the Cameroonian market.</p>
       </div>
     </div>
     <div class="item">
@@ -51,15 +51,15 @@
     <div class="item">
       <img src="./fc-elements/slides/slide5.png" alt="slide5">
       <div class="carousel-caption">
-        <h3>Like to know more?</h3>
-	<p>Check out our <a href="./categories/services">services</a> page.</p>
+        <h3>Wondering how to grow your business?</h3>
+	<p>Discover some of the ways we can help your business to flourish in our <a href="./categories/services">services</a> section.</p>
       </div>
     </div>
     <div class="item">
       <img src="./fc-elements/slides/slide5.png" alt="slide6">
       <div class="carousel-caption">
         <h3>Like to know more?</h3>
-	<p>To find out a bit more about our services please do <a href="./contact">get in touch</a>.</p>
+	<p>Ask us a question or arrange a no obligation consultation &raquo; <a href="./contact">get in touch</a> &laquo;</p>
       </div>
     </div>
   </div>

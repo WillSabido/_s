@@ -3,8 +3,6 @@ felejo
 
 Hi. I'm a fluid theme called `felejo`, based on '_s' or `underscores`, if you like. I'm a theme meant for hacking, so go nuts!
 
-My ultra-minimal CSS might make me look like theme tartare but that means less stuff to get in your way when you're designing your awesome theme. Here are some of the other more interesting things you'll find here:
-
 * A just right amount of lean, well-commented, modern, HTML5 templates.
 * A helpful 404 template.
 * A sample custom header implementation in `inc/custom-header.php` that can be activated by uncommenting one line in functions.php and adding the code snippet found in the comments of `inc/custom-header.php` to your `header.php` template.

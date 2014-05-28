@@ -205,7 +205,16 @@ big {
 	color: rgba(100,100,100,0.8);
 	text-shadow: 1px 1px 2px rgba(255,255,255,0.6), 0px -1px 2px rgba(0,0,0,0.4);
 }
-
+h1.page-title {
+	font-size: 1.8em;
+	color: rgba(100,100,100,0.8);
+	text-shadow: 1px 1px 2px rgba(255,255,255,0.6), 0px -1px 2px rgba(0,0,0,0.4);
+}
+h1.entry-title {
+	font-size: 1.4em;
+	color: rgba(150,150,150,0.8);
+	text-shadow: 1px 1px 2px rgba(255,255,255,0.6), 0px -1px 2px rgba(10,10,10,0.4);
+}
 /*--------------------------------------------------------------
 3.0 Elements
 --------------------------------------------------------------*/
@@ -220,11 +229,11 @@ div.site-branding {
 	padding: 3px;
 }
 div.site-branding a, div.site-branding a:visited {
-	font-family:Papyrus, Helvetica, Arial, sans-serif;
-	font-size: 2em;
+	font-family:Garamond, Helvetica, Arial, sans-serif;
+	font-size: 3em;
 	font-weight: bold;
-	color: rgba(100,100,100,0.8);
-	text-shadow: 2px 2px 3px rgba(255,255,255,0.6), 0px -2px 4px rgba(0,0,0,0.3);
+	color: rgba(10,10,10,0.8);
+	text-shadow: 0px -2px 2px rgba(255,255,255,0.6), 0px 2px 2px rgba(0,0,0,0.3);
 	text-decoration: none;
 }
 div.site-branding a:hover {
@@ -311,7 +320,9 @@ footer a {
 footer a:hover, footer a:visited, footer a:active {
 	color: ivory;
 }
-
+article {
+	border-bottom: 1px GhostWhite;
+}
 /*--------------------------------------------------------------
 4.0 Inputs and buttons
 --------------------------------------------------------------*/
@@ -673,13 +684,15 @@ a:active {
 --------------------------------------------------------------*/
 .widget {
 	font-family: Futura, sans-serif;
-	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.6);
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
 	background-color: black;
-	color: White;
-	margin: 1em 1em;
+	color: WhiteSmoke;
+}
+.widget h1 {
+	color: Gainsboro;
 }
 /* Make sure select elements fit in widgets */
 .widget select {
@@ -694,14 +707,14 @@ div#secondary widget-area {
 	padding-right: 0px;
 }
 div#secondary aside {
-	padding: 5px;
+	padding: 10px;
 }
 aside.widget ul {
 	list-style: none;
 }
 aside.widget a {
 	text-decoration: none;
-	color: seashell;
+	color: LightGoldenrodYellow;
 }
 #secondary li {
 	border-bottom: 1px ivory;
@@ -735,15 +748,15 @@ div#footer-widgets aside {
 	background: black;
 }
 aside a {
-	padding: 4px;
-	margin: 2px;
+	padding: 3px;
+	margin: 1px;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
 }
 aside a:hover {
-	color: white;
-	background-color: darkgoldenrod;
+	color: black;
+	background-color: goldenrod;
 	text-decoration: none;
 }
 div#footer-widgets aside {
@@ -756,11 +769,16 @@ div#footer-widgets {
 div#footer-widgets panel {
 	background-color: black;
 }
-
+h1.widget-title {
+	font-weight: normal;
+	font-size: 1.1em;
+	border-bottom: 1px solid #bababa;
+	margin-bottom: 10px;
+}
 /*--------------------------------------------------------------
 10.0 Content ( cut l 758 - body.home .entry-content ) div#primary.content-area
 --------------------------------------------------------------*/
-body.home header.entry-header {
+body.home header.entry-header, body.page header.entry-header {
 	display: none;
 }
 #col-main {
@@ -785,12 +803,16 @@ body.home header.entry-header {
 body.home .entry-content {
 	text-align: center;
 }
-div#primary {
+body.home div#primary {
 	padding: 0 10%;
 }
 div#content {
 	background-color:rgba(245,245,245,0.7);
-	padding: 0 42px;
+	padding: 21px 42px;
+}
+body.archive .entry-title, body.single .entry-title, body.category .entry-title {
+	display: block;
+	border-bottom: 1px GhostWhite;
 }
 /* centered columns styles */
 .row-centered {
@@ -938,7 +960,7 @@ object {
 }
 .carousel-indicators {
 	width: auto;
-	bottom: 0px;
+	bottom: -20px;
 	left: 10px;
 	margin-left: 2px;
 }
@@ -1191,6 +1213,9 @@ body,
 }
 	.carousel-indicators, .carousel-control {
 		display: none;
+}
+	.carousel-caption {
+	display: none;
 }
 	.btn-block {
 		text-overflow: wrap;

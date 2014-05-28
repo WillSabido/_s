@@ -12,7 +12,7 @@
 <div id="footer-widgets" class="row row-centered">
 <div class="col-xs-12 col-centered" style="margin: 0 auto;">
 <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Footer')) : ?>
-	<div><p>Content not found</p></div><!-- END widget full column -->
+	<div><p></p></div><!-- END widget full column -->
 <?php endif; ?>
 </div><!-- END widget row -->
 </div><!-- END # footer-widgets row -->

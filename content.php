@@ -3,7 +3,7 @@
  * @package felejo
  */
 ?>
-<div id="col-main" class="col-xs-12 col-md-8">
+<!-- <div id="col-main" class="col-xs-12 col-md-8"> -->
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
@@ -62,4 +62,4 @@
 		<?php edit_post_link( __( 'Edit', 'felejo' ), '<span class="edit-link">', '</span>' ); ?>
 	</footer><!-- .entry-meta -->
 </article><!-- #post-## -->
-</div><!-- #col-main -->
+<!-- #col-main  </div> -->
