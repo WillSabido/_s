@@ -215,6 +215,18 @@ h1.entry-title {
 	color: rgba(150,150,150,0.8);
 	text-shadow: 1px 1px 2px rgba(255,255,255,0.6), 0px -1px 2px rgba(10,10,10,0.4);
 }
+h2 {
+	font-size: 1.2em;
+	font-weight: bold;
+	padding-bottom: 12px;
+	border-bottom: 1px ivory;
+}
+h3 {
+	font-size: 1.1em;
+	font-weight: bold;
+	padding-bottom: 6px;
+	border-bottom: 1px ivory;
+}
 /*--------------------------------------------------------------
 3.0 Elements
 --------------------------------------------------------------*/
@@ -309,19 +321,30 @@ div.site-info {
 	font-size: 0.8em;
 	color: ghostwhite;
 }
-footer {
+footer.site-footer {
 	color: white;
 	background-color: none;
 	border-top:1px solid goldenrod;
 }
 footer a {
-	color: beige;
+	color: darkgoldenrod;
 }
 footer a:hover, footer a:visited, footer a:active {
-	color: ivory;
+	color: goldenrod;
+}
+p.credits a {
+	color: PaleGoldenRod;
+}
+p.credits a:hover {
+	color: White;
+	text-decoration: none;
+    text-shadow: 1px 2px 2px rgba(0,0,0,0.5);
 }
 article {
 	border-bottom: 1px GhostWhite;
+}
+code {
+	whitespace: normal;
 }
 /*--------------------------------------------------------------
 4.0 Inputs and buttons
@@ -448,7 +471,7 @@ nav#site-navigation input[type="search"] {
 }
 .main-navigation a {
 	padding: 10px;
-	color: LightGrey;
+	color: LightGoldenRodYellow;
 }
 .main-navigation a:active {
 	color: DarkRed;
@@ -459,7 +482,7 @@ nav#site-navigation input[type="search"] {
 .main-navigation a:hover {
 	text-decoration: none;
 	color: darkslategrey;
-	background: gold;
+	background: goldenrod;
 }
 .main-navigation ul ul {
 	-webkit-border-top-left-radius: 5px;
@@ -496,15 +519,16 @@ nav#site-navigation input[type="search"] {
 5.1 Links
 --------------------------------------------------------------*/
 a {
-	color: Black;
+	color: GoldenRod;
 }
 a:visited {
-	color: DarkSlateGrey;
+	color: DarkGoldenRod;
 }
 a:hover,
 a:focus,
 a:active {
 	color: midnightblue;
+	text-decoration: none;
 }
 
 /*--------------------------------------------------------------
@@ -512,7 +536,6 @@ a:active {
 --------------------------------------------------------------*/
 .main-navigation {
 	font-family:futura, tahoma, sans-serif;
-	background-color: black;
 	clear: both;
 	display: block;
 	float: left;
@@ -576,6 +599,8 @@ a:active {
 	.menu-toggle,
 	.main-navigation.toggled .nav-menu {
 		display: block;
+		color: white;
+		padding: 10px;
 	}
 
 	.main-navigation ul {
@@ -688,11 +713,11 @@ a:active {
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
-	background-color: black;
+	background-color: rgba(24,24,24,0.1);
 	color: WhiteSmoke;
 }
 .widget h1 {
-	color: Gainsboro;
+	color: dimgray;
 }
 /* Make sure select elements fit in widgets */
 .widget select {
@@ -714,7 +739,7 @@ aside.widget ul {
 }
 aside.widget a {
 	text-decoration: none;
-	color: LightGoldenrodYellow;
+	color: Goldenrod;
 }
 #secondary li {
 	border-bottom: 1px ivory;
@@ -812,7 +837,7 @@ div#content {
 }
 body.archive .entry-title, body.single .entry-title, body.category .entry-title {
 	display: block;
-	border-bottom: 1px GhostWhite;
+	border-bottom: 1px dotted Gainsboro;
 }
 /* centered columns styles */
 .row-centered {
@@ -1227,6 +1252,13 @@ body,
 	}
 	input[type="submit"] {
 		align: center;
+	}
+	
+	div.site-branding {
+		font-size: smaller;
+	}
+	.site-footer p {
+		margin-bottom: 0.1em;
 	}
 
 }

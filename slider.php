@@ -52,7 +52,7 @@
       <img src="./fc-elements/slides/slide5.png" alt="slide5">
       <div class="carousel-caption">
         <h3>Wondering how to grow your business?</h3>
-	<p>Discover some of the ways we can help your business to flourish in our <a href="./categories/services">services</a> section.</p>
+	<p>Discover some of the ways we can help your business to flourish in our <a href="./category/services">services</a> section.</p>
       </div>
     </div>
     <div class="item">
