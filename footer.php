@@ -18,7 +18,7 @@
 </div><!-- END # footer-widgets row -->
 	<footer id="colophon" class="site-footer row" role="contentinfo">
 		<div class="site-info">
-			<p class="credits twocol pull-left"><?php echo '&copy;' . date('Y') . '&nbsp;' . get_bloginfo ( 'name' ); ?> All rights reserved.</p>
+			<p class="credits twocol pull-left"><?php echo '&copy;' . date('Y') . '&nbsp;' . get_bloginfo ( 'name' ); ?> All rights reserved.&nbsp;</p><p class="credits twocol pull-left">RCCM: RC/DLA/2014/A/1931 | Tax payer No: P 077911243477 Y</p>
 			<p class="credits twocol pull-right">
 				<?php echo 'Web development and hosting by <a href="http://webisabihosting.co.uk" target="_blank" rel="designer">WebiSabi</a>'; ?>
 			</p>

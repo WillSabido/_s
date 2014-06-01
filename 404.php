@@ -6,7 +6,7 @@
  */
 
 get_header(); ?>
-
+	<div id="col-main" class="col-xs-12 col-md-8">
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
@@ -52,5 +52,5 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
+	</div><!-- #column-main -->
 <?php get_footer(); ?>
